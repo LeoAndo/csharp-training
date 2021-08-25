@@ -1,17 +1,27 @@
-﻿namespace HelloWorld
+﻿using System;
+
+namespace HelloWorld
 {
     public class Person
     {
-        private string name;
-        public Person(string _name)
+        public Person(string name, int age)
         {
-            name = _name;
+            Name = name;
+            Age = age;
         }
+
+        public void ShowInfo()
+        {
+            Console.WriteLine("Name: " + Name + " Age: " + Age);
+        }
+
         public string Name
         {
-            // valueに代入された値が格納されている
-            set => name = value;
-            get => name;
+            private set; get;
+        }
+        public int Age
+        {
+            set; get;
         }
     }
 }
