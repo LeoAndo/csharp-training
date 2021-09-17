@@ -6,6 +6,7 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            // Console.WriteLine("Hello, world!");
             Console.WriteLine("My Name is {0} {1}. ", "Taro", "Yamada");
             const string name = "Yamada";
             // name = "Tanaka"; // 値の再代入を禁止する
