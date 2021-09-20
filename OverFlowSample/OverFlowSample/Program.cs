@@ -6,7 +6,9 @@ namespace OverFlowSample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            byte b = Byte.MaxValue; // 255
+            b += 1;
+            Console.WriteLine(b); // 0
         }
     }
 }
