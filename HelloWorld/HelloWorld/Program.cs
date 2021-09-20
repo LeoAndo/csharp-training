@@ -20,6 +20,11 @@ namespace HelloWorld
             TestTupleSample();
             TestObjectReferenceEquals();
             TestMultiConstoractors();
+            int remainder = 0;
+            int divRet = TestDivide(4, 2, out remainder);
+            Console.WriteLine($"remainder: {remainder}, divRet: {divRet}");
+            int divRet2 = TestDivide(7, 2, out remainder);
+            Console.WriteLine($"remainder: {remainder}, divRet2: {divRet2}");
         }
 
         private static void TestStringInterpolation()
@@ -79,6 +84,11 @@ namespace HelloWorld
             Person yoshida = new Person("Yoshida", 50);
             yoshida.ShowInfo();
             Console.WriteLine("END - TestMultiConstoractors");
+        }
+        private static int TestDivide(int x, int y, out int remainder)
+        {
+            remainder = x % y;
+            return x / y;
         }
     }
 }
