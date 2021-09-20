@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverFlowSample", "OverFlowSample\OverFlowSample.csproj", "{4E999E12-E5AF-4007-9710-E721BA397BB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E999E12-E5AF-4007-9710-E721BA397BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E999E12-E5AF-4007-9710-E721BA397BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E999E12-E5AF-4007-9710-E721BA397BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E999E12-E5AF-4007-9710-E721BA397BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E78618BE-3146-4052-A2A3-208DAFDE7A47}
+	EndGlobalSection
+EndGlobal
