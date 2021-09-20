@@ -15,6 +15,16 @@ namespace HelloWorld
             yamadaObj.ShowInfo();
             yamadaObj.Age = 21;
             yamadaObj.ShowInfo();
+
+            TestStringInterpolation();
+        }
+
+        private static void TestStringInterpolation()
+        {
+            string name = "Tanaka";
+            int age = 30;
+            string message = $"Name: {name}, Age: {age}";
+            Console.WriteLine(message);
         }
     }
 }
