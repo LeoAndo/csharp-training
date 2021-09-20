@@ -45,6 +45,10 @@ namespace HelloWorld
             // デフォルトのタプルメンバ名
             var point4 = (70, 80);
             Console.WriteLine($"Item1: {point4.Item1} Item2: {point4.Item2}");
+
+            // Tuple型の値の分解
+            (x, y) = point4;
+            Console.WriteLine($"X: {x} Y: {y}");
         }
     }
 }
