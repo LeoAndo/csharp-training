@@ -18,6 +18,7 @@ namespace HelloWorld
 
             TestStringInterpolation();
             TestTupleSample();
+            TestObjectReferenceEquals();
         }
 
         private static void TestStringInterpolation()
@@ -49,6 +50,18 @@ namespace HelloWorld
             // Tuple型の値の分解
             (x, y) = point4;
             Console.WriteLine($"X: {x} Y: {y}");
+        }
+        private static void TestObjectReferenceEquals()
+        {
+            Console.WriteLine("START : TestObjectReferenceEquals");
+            Person tanaka = new Person("Tanaka", 20);
+            Person tanaka2 = tanaka;
+            Person tanaka3 = new Person("Tanaka", 20);
+
+            Console.WriteLine($"(tanaka, tanaka2): {object.ReferenceEquals(tanaka, tanaka2)}");
+            Console.WriteLine($"(tanaka, tanaka3): {object.ReferenceEquals(tanaka, tanaka3)}");
+            Console.WriteLine($"(null, tanaka3): {object.ReferenceEquals(null, tanaka3)}");
+            Console.WriteLine("END : TestObjectReferenceEquals");
         }
     }
 }
