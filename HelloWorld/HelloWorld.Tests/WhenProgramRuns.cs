@@ -20,10 +20,10 @@ namespace HelloWorld.Tests
             _consoleOutput = w.GetStringBuilder().ToString().Trim();
         }
 
-        //[TestMethod]
-        //public void SaysHelloWorld()
-        //{
-        //    Assert.AreEqual("Hello, world!", _consoleOutput);
-        //}
+        [TestMethod]
+        public void SaysHelloWorld()
+        {
+            Assert.AreEqual("Hello, world!", _consoleOutput);
+        }
     }
 }

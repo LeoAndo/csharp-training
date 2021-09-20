@@ -15,4 +15,7 @@
 </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld\HelloWorld.csproj" />
+  </ItemGroup>
 </Project>
