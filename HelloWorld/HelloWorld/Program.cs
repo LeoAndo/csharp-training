@@ -61,6 +61,10 @@ namespace HelloWorld
             Console.WriteLine($"(tanaka, tanaka2): {object.ReferenceEquals(tanaka, tanaka2)}");
             Console.WriteLine($"(tanaka, tanaka3): {object.ReferenceEquals(tanaka, tanaka3)}");
             Console.WriteLine($"(null, tanaka3): {object.ReferenceEquals(null, tanaka3)}");
+
+            Console.WriteLine($"(tanaka, tanaka2): {(tanaka == tanaka2)}");
+            Console.WriteLine($"(tanaka, tanaka3): {(tanaka == tanaka3)}");
+            Console.WriteLine($"(null, tanaka3): {(null == tanaka3)}");
             Console.WriteLine("END : TestObjectReferenceEquals");
         }
     }
