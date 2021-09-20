@@ -17,6 +17,7 @@ namespace HelloWorld
             yamadaObj.ShowInfo();
 
             TestStringInterpolation();
+            TestTupleSample();
         }
 
         private static void TestStringInterpolation()
@@ -25,6 +26,25 @@ namespace HelloWorld
             int age = 30;
             string message = $"Name: {name}, Age: {age}";
             Console.WriteLine(message);
+        }
+        private static void TestTupleSample()
+        {
+            // タプルの作成と使用
+            (int x, int y) point = (10, 20);
+            Console.WriteLine($"X: {point.x} Y: {point.y}");
+
+            // 初期化子でのタプルメンバの名前付け
+            var point2 = (x: 30, y: 40);
+            Console.WriteLine($"X: {point2.x} Y: {point2.y}");
+
+            // 変数からタプルメンバ名を推測する
+            int x = 50, y = 60;
+            var point3 = (x, y);
+            Console.WriteLine($"X: {point3.x} Y: {point3.y}");
+
+            // デフォルトのタプルメンバ名
+            var point4 = (70, 80);
+            Console.WriteLine($"Item1: {point4.Item1} Item2: {point4.Item2}");
         }
     }
 }
