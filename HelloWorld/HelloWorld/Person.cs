@@ -4,6 +4,8 @@ namespace HelloWorld
 {
     public class Person
     {
+        public Person() : this("DefaultName") { }
+        public Person(string name) : this(name, 100) { }
         public Person(string name, int age)
         {
             Name = name;

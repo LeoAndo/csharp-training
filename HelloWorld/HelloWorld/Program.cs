@@ -19,6 +19,7 @@ namespace HelloWorld
             TestStringInterpolation();
             TestTupleSample();
             TestObjectReferenceEquals();
+            TestMultiConstoractors();
         }
 
         private static void TestStringInterpolation()
@@ -66,6 +67,18 @@ namespace HelloWorld
             Console.WriteLine($"(tanaka, tanaka3): {(tanaka == tanaka3)}");
             Console.WriteLine($"(null, tanaka3): {(null == tanaka3)}");
             Console.WriteLine("END : TestObjectReferenceEquals");
+        }
+
+        private static void TestMultiConstoractors()
+        {
+            Console.WriteLine("START - TestMultiConstoractors");
+            Person defPerson = new Person();
+            defPerson.ShowInfo();
+            Person tanaka = new Person("Tanaka");
+            tanaka.ShowInfo();
+            Person yoshida = new Person("Yoshida", 50);
+            yoshida.ShowInfo();
+            Console.WriteLine("END - TestMultiConstoractors");
         }
     }
 }
