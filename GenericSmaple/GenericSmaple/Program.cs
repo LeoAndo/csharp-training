@@ -18,6 +18,9 @@ namespace GenericSmaple
             var valueHolderStr = new ValueHolder<string>();
             valueHolderStr.Value = "Hello, Generic!";
             Console.WriteLine($"value : {valueHolderStr.Value}");
+
+            valueHolderStr.Foo1<int>(999);
+            valueHolderStr.Foo1("型推論で型パラメータの指定を省略できる");
         }
     }
 }
