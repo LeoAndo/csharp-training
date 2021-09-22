@@ -25,6 +25,10 @@ namespace HelloWorld
             Console.WriteLine($"remainder: {remainder}, divRet: {divRet}");
             int divRet2 = TestDivide(7, 2, out remainder);
             Console.WriteLine($"remainder: {remainder}, divRet2: {divRet2}");
+
+            int refTestData = 1;
+            TestRef(ref refTestData);
+            Console.WriteLine($"refTestData: {refTestData}"); // refTestData: 10
         }
 
         private static void TestStringInterpolation()
@@ -89,6 +93,14 @@ namespace HelloWorld
         {
             remainder = x % y;
             return x / y;
+        }
+
+        private static void TestRef(ref int refTestData)
+        {
+            Console.WriteLine("START - TestRef");
+            refTestData = 10;
+            Console.WriteLine($"refTestData: {refTestData}"); // refTestData: 10
+            Console.WriteLine("END - TestRef");
         }
     }
 }
