@@ -29,6 +29,8 @@ namespace HelloWorld
             int refTestData = 1;
             TestRef(ref refTestData);
             Console.WriteLine($"refTestData: {refTestData}"); // refTestData: 10
+            var r = new Rect(10, 20, 100, 100);
+            Console.WriteLine($"area: {GetArea(r)}"); // 呼び出し元では、inキーワードは省略可能
         }
 
         private static void TestStringInterpolation()
@@ -101,6 +103,11 @@ namespace HelloWorld
             refTestData = 10;
             Console.WriteLine($"refTestData: {refTestData}"); // refTestData: 10
             Console.WriteLine("END - TestRef");
+        }
+
+        private static double GetArea(in Rect r)
+        {
+            return r.Width * r.Height;
         }
     }
 }
